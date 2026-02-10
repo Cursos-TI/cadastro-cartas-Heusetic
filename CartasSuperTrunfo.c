@@ -21,6 +21,8 @@ int main() {
   float pib2;
   int pontos2;
 
+  printf("bem vindo ao super trunfo, cadastre suas cartas\n");
+
   printf("Cadastro carta 1\n");
   
   printf("estado :");
@@ -76,6 +78,16 @@ int main() {
     printf("area : %.2f\n", area1);
     printf("pib : %.2f\n", pib1);
     printf("pontos turisticos: %d\n", pontos1);
+
+    printf("\n====== carta 2 ======\n");
+
+    printf("estado : %s\n", estado2);
+    printf("codigo : %s\n", código2);
+    printf("cidade : %S\n", cidade2);
+    printf("populacao : %d\n", populacao2);
+    printf("area : %.2f\n", area2);
+    printf("pib : %.2f\n", pib2);
+    printf("pontos turisticos: %d\n", pontos2);
 
   
   return 0;
