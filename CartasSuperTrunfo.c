@@ -2,7 +2,7 @@
 
 int main() {
 
-
+   //trabalho super trunfo para faculdade, com objetivo de algo simples, porem funcional, que com base no que o professor pediu, teria que ser simples.
   
   char estado1[50];
   char código1[5];
@@ -12,6 +12,7 @@ int main() {
   float pib1;
   int pontos1;
   float densidade1, PibPerCapita1;
+  float superpoder1;
 
   // ===== carta 2 ====== 
 
@@ -23,6 +24,7 @@ int main() {
   float pib2;
   int pontos2;
   float densidade2, PibPerCapita2;
+  float superpoder2; 
 
   printf("bem vindo ao super trunfo, cadastre suas cartas\n");
 
@@ -79,6 +81,10 @@ int main() {
   //calculos
   densidade2, populacao2/area2;
   PibPerCapita1 =  (pib2 * 1000000000) /populacao2;
+
+   //calcular o super poder, é a soma de todos os tributo exceto codigo, cidade e estado.
+    superpoder1 = populacao1 + area1 + pib1 + pontos1 + densidade1 + PibPerCapita1;
+    superpoder2 = populacao2 + area2 + pib2 + pontos2 + densidade2 + PibPerCapita2;
          
     printf("\n====== carta 1 ======\n");
 
@@ -103,7 +109,10 @@ int main() {
     printf("pontos turisticos: %d\n", pontos2);
     printf("densidade populacional : %.2f hab/km2\n", densidade2);
     printf("pib per capital : %.2f reais\n", PibPerCapita2);
-  
+    
+   //se o resultado for 1, a carta 1 é mais forte, se for 0, a carta 2 é mais forte.
+  printf("\n======SUPER PODER======\n");
+  printf("%d\n", superpoder1>superpoder2);
   return 0;
 
 }  
