@@ -58,7 +58,7 @@ int main() {
   printf("Cadastro carta 2\n");
   
   printf("estado :");
-  scanf("%S", &estado2);
+  scanf("%s", &estado2);
 
   printf("código :");
   scanf("%s", &código2);
@@ -109,10 +109,19 @@ int main() {
     printf("pontos turisticos: %d\n", pontos2);
     printf("densidade populacional : %.2f hab/km2\n", densidade2);
     printf("pib per capital : %.2f reais\n", PibPerCapita2);
+
+    //exibir maior carta trabalhando com if e else
+
+    if(estado1 > estado2){
+      printf("a carta 1 é maior");
+    } else {
+      printf("a carta 2 é maior");
+    }
     
    //se o resultado for 1, a carta 1 é mais forte, se for 0, a carta 2 é mais forte.
   printf("\n======SUPER PODER======\n");
   printf("%d\n", superpoder1>superpoder2);
+
   return 0;
 
 }  
