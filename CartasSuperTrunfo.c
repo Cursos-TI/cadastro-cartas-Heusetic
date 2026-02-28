@@ -111,16 +111,26 @@ int main() {
     printf("pib per capital : %.2f reais\n", PibPerCapita2);
 
     //exibir maior carta trabalhando com if e else
+    printf("==EXIBIR MAIOR CARTA==\n");
 
-    if(estado1 > estado2){
-      printf("a carta 1 é maior");
+    if(populacao1 > populacao2){
+      printf("carta 1: populaçao é maior\n");
     } else {
-      printf("a carta 2 é maior");
+      printf("carta 2: populaçaos é maior\n");
+    }
+    if(area1 > area2) {
+      printf("carta 1: area é maior\n");
+    } else {
+      printf("carta 2: area é maior\n");
     }
     
-   //se o resultado for 1, a carta 1 é mais forte, se for 0, a carta 2 é mais forte.
+   //mostrar resultado de qual carta tem o maior super poder
   printf("\n======SUPER PODER======\n");
-  printf("%d\n", superpoder1>superpoder2);
+  if(superpoder1 > superpoder2){
+    printf("carta 1 super poder\n");
+  } else {
+    printf("carta 2 superpoder\n");
+  }
 
   return 0;
 
